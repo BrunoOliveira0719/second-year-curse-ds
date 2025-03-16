@@ -1,4 +1,4 @@
-const { createUser, readUsers, updateUser, deleteUser } = require("../../database/CRUD_NodeJS/main.js");
+const { createUser, readUsers, updateUser, deleteUser } = require("../../database/CRUD_NodeJS/table_user/main");
 
 const express = require('express');
 const app = express();
