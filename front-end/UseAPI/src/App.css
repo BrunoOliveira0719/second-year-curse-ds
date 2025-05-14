@@ -4,17 +4,70 @@
     background-color: #1d1d1d;
     display: grid;
     grid-template-columns: repeat(3, auto);
-    align-items: center;
-    justify-content: center;
     color: #7a7a7a;
-    overflow: visible;
-    
+    padding-left: 50px;
+}
+
+.main-app-unique {
+    height: 100vh;
+    width: 100%;
+    background-color: #1d1d1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7a7a7a;
+}
+
+.app {
+    width: 100vh;
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .card {
+    width: 75%;
+    height: 95%;
     background-color: #2d2d2d;
     border-radius: 10px;
-    padding: 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-unique {
+    width: 30%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #2d2d2d;
+    border-radius: 10px;
+}
+
+.organization-search {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 3;
+    width: 200px;
+    margin-top: 3%;
+    left: 45%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.search {
+    height: 22px;
+    border-radius: 15px;
+    margin-right: 10px;
+    padding: 5px;
+    border: none;
+    background-color: #3d3d3d;
+    color: #f5f5f5;
 }
