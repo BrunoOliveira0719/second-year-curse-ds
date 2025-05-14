@@ -1,0 +1,36 @@
+@charset "UTF-8";
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --spacing-base: 10px;
+}
+
+/* Botão */
+.button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: var(--spacing-base);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  .button {
+    font-size: 18px;
+  }
+}
+.button:hover {
+  background-color: var(--secondary-color);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Cartão de produto */
+.card {
+  background-color: white;
+  padding: var(--spacing-base);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*# sourceMappingURL=style.css.map */

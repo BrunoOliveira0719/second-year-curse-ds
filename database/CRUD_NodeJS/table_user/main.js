@@ -36,7 +36,7 @@ function readUsers(callback) {
             console.error("Error reading users:", err);
             return callback(err, null);
         };
-        callback(null, {"Users: ": results});
+        callback(null, {"users": results});
     });
 }
 

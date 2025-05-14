@@ -1,0 +1,123 @@
+.main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_app {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 10% 90%;
+}
+
+.main_app h1 {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.main_app a {
+    color: inherit;
+}
+
+.main_app a:hover {
+    color: #1473E6;
+}
+
+.read {
+    height: 100%;
+    width: 100%;
+}
+
+.read li {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 90% 5% 5%;
+    background-color: #b0b6ba;
+    margin-top: 2%;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.read li button {
+    padding: 2px;
+    margin-left: 5px;
+    border-radius: 7px;
+    background-color: #1473E6;
+    color: white;
+    border: none;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SignUp {
+    height: 62%;
+    width: 30%;
+    background-color: #7a7a7a;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 15%, 65%, 20%;
+}
+
+.SignUp h1 {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.SignUp a {
+    color: inherit;
+}
+
+.SignUp a:hover {
+    color: #1473E6;
+}
+
+.SignUp ul {
+    width: 100%;
+}
+
+.SignUp li {
+    margin-left: 15%;
+    width: 100%;
+}
+
+.SignUp p {
+    margin-top: 5%;
+    height: 40%;
+    width: 70%;
+}
+
+.SignUp #namep {
+    margin-top: 0;
+}
+
+.SignUp input {
+    width: 70%;
+    height: 38px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    border: 1px solid #000000;
+    padding-left: 5px;
+    color: #000000;
+}
+
+#signUp {
+    width: 50%;
+    height: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    background-color: #1473E6;
+    color: white;
+    border: none;
+}

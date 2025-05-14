@@ -1,0 +1,48 @@
+// Variáveis
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --spacing-base: 10px;
+}
+
+// Mixins
+@mixin transition($property, $duration) {
+  transition: $property $duration ease-in-out;
+}
+
+@mixin responsive-text($min, $max) {
+  font-size: $min;
+
+  @media (min-width: 768px) {
+    font-size: $max;
+  }
+}
+
+@mixin box-shadow($color: black, $intensity: 10px) {
+  box-shadow: 0 4px $intensity rgba($color, 0.3);
+}
+
+// Estilo para botão
+/* Botão */
+.button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: var(--spacing-base);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  @include responsive-text(14px, 18px);
+
+  &:hover {
+    background-color: var(--secondary-color);
+    @include transition(all, 0.3s);
+  }
+}
+
+/* Cartão de produto */
+.card {
+  background-color: white;
+  padding: var(--spacing-base);
+  border-radius: 8px;
+  @include box-shadow(black, 10px);
+}
