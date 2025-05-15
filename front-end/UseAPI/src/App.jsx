@@ -48,6 +48,11 @@ function App() {
     
     <div className={data.length > 1 ? "main-app" : "main-app-unique"}>
       {data ? data.map((country) => {
+        if (country.languages) {
+          const languagesKeys = Object.keys(country.languages)
+          var firstLanguage = country.languages[languagesKeys[0]]
+        };
+        
         return (
           <div key={country.name.common} className={data.length > 1 ? "card" : "card-unique"}>
             <h1>{country.name.common}</h1>
@@ -55,6 +60,7 @@ function App() {
             <p>Region: {country.region}</p>
             <p>Capital: {country.capital}</p>
             <p>Population: {country.population}</p>
+            <p>Languages: {firstLanguage}</p>
           </div>
         )
       }) : <h1>Loading...</h1>}
